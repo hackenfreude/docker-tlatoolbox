@@ -21,7 +21,7 @@ Visit [The TLA Home Page](http://research.microsoft.com/en-us/um/people/lamport/
 0. Make sure you're on a system running [X](https://en.wikipedia.org/wiki/X_Window_System).
 1. Disable X access control (don't do this on a public-facing machine): `$ xhost +`
 2. `$ cd` to a path where you want to write some .tla files.
-3. ``$ docker run -d -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`:`pwd` -e DISPLAY=$DISPLAY hackenfreude/tlatoolbox-1.5.2``
+3. ``$ docker run -d -v /tmp/.X11-unix:/tmp/.X11-unix -v `pwd`:`pwd` -e DISPLAY=$DISPLAY hackenfreude/tlatoolbox``
 4. You should see the TLA+ splash screen and eventually the TLA Toolbox.
 5. Use the TLA Toolbox menu: File/Open Spec/Add New Spec.
 6. Enter /container/host/path/you/were/in/when/starting/this/container/{foo}.tla as the root-module name. The specification name should auto-complete to {foo}. Click Finish.
@@ -33,4 +33,4 @@ Visit [The TLA Home Page](http://research.microsoft.com/en-us/um/people/lamport/
 * Docker mounted the host's working directory in the container at the same path.
 
 ## WHAT IF IT DOESN'T WORK?
-Open an [issue](https://github.com/hackenfreude/docker-tlatoolbox-1.5.2/issues/new).
+Open an [issue](https://github.com/hackenfreude/docker-tlatoolbox/issues/new).
